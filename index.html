@@ -222,7 +222,20 @@ async function loadImages(item) {
     .filter((image, index, all) =>
       all.findIndex(candidate => candidate.imageUrl === image.imageUrl) === index);
 
-  const checkedImages = await Promise.all(images.slice(0, 12).map(getUsableImage));
+  const imagesBySource = new Map();
+  images.forEach(image => {
+    if (!imagesBySource.has(image.source)) imagesBySource.set(image.source, []);
+    imagesBySource.get(image.source).push(image);
+  });
+  const orderedImages = [];
+  const sourceImages = [...imagesBySource.values()];
+  for (let index = 0; sourceImages.some(source => source[index]); index++) {
+    sourceImages.forEach(source => {
+      if (source[index]) orderedImages.push(source[index]);
+    });
+  }
+
+  const checkedImages = await Promise.all(orderedImages.map(getUsableImage));
   if (item !== current) return;
   const used = checkedImages.filter(Boolean).slice(0, 3);
 
