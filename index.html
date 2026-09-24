@@ -171,13 +171,6 @@
       color: #b5c0c9;
     }
 
-    #status {
-      text-align: center;
-      color: var(--muted);
-      min-height: 24px;
-      margin-bottom: 10px;
-    }
-
     @media(max-width:750px) {
       #photos {
         grid-template-columns: 1fr;
@@ -194,7 +187,6 @@
   <main>
     <header>
       <h1>ACTO 104 Aircraft Recognition</h1>
-      <div id="sub">Can you identify the aircraft?</div>
     </header>
 
     <div class="controls source-controls">
@@ -216,9 +208,7 @@
       <button id="next">Next</button>
     </div>
 
-    <div id="status"></div>
     <section id="photos" aria-live="polite"></section>
-
     <section id="info" class="hidden">
       <h2 id="aircraft"></h2>
       <div id="details" class="meta"></div>
@@ -239,18 +229,19 @@
       return Number(document.getElementById("photoCount").value);
     }
 
-    function chooseRandom() {
+    function chooseRandom(excluded = new Set()) {
       const pool = getPool();
       if (!pool.length) return;
 
-      current = pool[Math.floor(Math.random() * pool.length)];
+      const available = pool.filter(item => !excluded.has(item));
+      const choices = available.length ? available : pool;
+      current = choices[Math.floor(Math.random() * choices.length)];
+      const attempted = new Set(excluded);
+      attempted.add(current);
       revealed = false;
       document.getElementById("info").classList.add("hidden");
       document.getElementById("reveal").disabled = false;
-      document.getElementById("status").textContent =
-        `${current.list} • ACTO 104 No. ${current.number}`;
-
-      loadImages(current, getPhotoCount());
+      loadImages(current, getPhotoCount(), attempted);
     }
 
     function renderPhoto(card, imageUrl, linkUrl, linkText, alt) {
@@ -356,11 +347,8 @@
       return photos.querySelectorAll(".photo");
     }
 
-    async function loadImages(item, count) {
+    async function loadImages(item, count, attempted) {
       const cards = makeCards(count);
-
-      document.getElementById("status").textContent =
-        `${item.list} • ACTO 104 No. ${item.number} • Searching Commons and Openverse…`;
 
       const results = await Promise.allSettled([
         getCommonsImages(item, 8),
@@ -400,6 +388,11 @@
           : [])
         : usableImages.slice(0, count);
 
+      if (!used.length && attempted.size < Math.min(getPool().length, 5)) {
+        chooseRandom(attempted);
+        return;
+      }
+
       for (let i = 0; i < count; i++) {
         const card = cards[i];
         if (used[i]) {
@@ -409,13 +402,6 @@
         }
       }
 
-      const sources = [...new Set(used.map(image => image.source))].join(" and ");
-      const sourceText = used.length === count
-        ? `Photos from ${sources}`
-        : `${used.length}/${count} photos found from Commons and Openverse`;
-
-      document.getElementById("status").textContent =
-        `${item.list} • ACTO 104 No. ${item.number} • ${sourceText}`;
     }
 
     const manufacturerNames = [
@@ -461,9 +447,9 @@
     }
 
     document.getElementById("reveal").addEventListener("click", reveal);
-    document.getElementById("next").addEventListener("click", chooseRandom);
-    document.getElementById("listSelect").addEventListener("change", chooseRandom);
-    document.getElementById("photoCount").addEventListener("change", chooseRandom);
+    document.getElementById("next").addEventListener("click", () => chooseRandom());
+    document.getElementById("listSelect").addEventListener("change", () => chooseRandom());
+    document.getElementById("photoCount").addEventListener("change", () => chooseRandom());
 
     chooseRandom();
   </script>
