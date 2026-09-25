@@ -1,0 +1,1674 @@
+[
+  {
+    "list": 1,
+    "groups": [
+      {
+        "number": 1,
+        "description": "Jet, Fuselage Engine(s)",
+        "aircraft": [
+          {
+            "number": 1,
+            "aircraft": "AMX",
+            "manufacturer": "AMX International",
+            "additional": "A-11 Ghibli"
+          },
+          {
+            "number": 2,
+            "aircraft": "Hawk",
+            "manufacturer": "BAe",
+            "additional": "T45 Goshawk / Hawk 100 / T2"
+          },
+          {
+            "number": 3,
+            "aircraft": "Eagle",
+            "manufacturer": "Boeing (McDonnell Douglas)",
+            "additional": "F-15 / F-15E Strike Eagle"
+          },
+          {
+            "number": 4,
+            "aircraft": "Alpha Jet",
+            "manufacturer": "Dassault / Dornier",
+            "additional": ""
+          },
+          {
+            "number": 5,
+            "aircraft": "Harrier II",
+            "manufacturer": "McDonnell Douglas (BAe)",
+            "additional": "AV-8B / TAV-8B"
+          },
+          {
+            "number": 6,
+            "aircraft": "Foxbat",
+            "manufacturer": "Mikoyan-Guryevich",
+            "additional": "MiG-25"
+          },
+          {
+            "number": 7,
+            "aircraft": "Foxhound",
+            "manufacturer": "Mikoyan-Guryevich",
+            "additional": "MiG-31"
+          },
+          {
+            "number": 8,
+            "aircraft": "Fulcrum",
+            "manufacturer": "Mikoyan-Guryevich",
+            "additional": "MiG-29 / 35"
+          },
+          {
+            "number": 9,
+            "aircraft": "Spirit",
+            "manufacturer": "Northrop",
+            "additional": "B-2A"
+          },
+          {
+            "number": 10,
+            "aircraft": "Saab 105",
+            "manufacturer": "Saab",
+            "additional": "SK-60"
+          },
+          {
+            "number": 11,
+            "aircraft": "Flanker",
+            "manufacturer": "Sukhoi",
+            "additional": "Su-27 / 30 / 33 / 35"
+          },
+          {
+            "number": 12,
+            "aircraft": "Fullback",
+            "manufacturer": "Sukhoi",
+            "additional": "Su-32 / 34"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "description": "Jet, Straight Wing, Fuselage Engine(s)",
+        "aircraft": [
+          {
+            "number": 13,
+            "aircraft": "MB-339",
+            "manufacturer": "Aermacchi",
+            "additional": ""
+          },
+          {
+            "number": 14,
+            "aircraft": "M-346",
+            "manufacturer": "Alenia Aermacchi",
+            "additional": "Master"
+          },
+          {
+            "number": 15,
+            "aircraft": "Hornet",
+            "manufacturer": "Boeing",
+            "additional": "F/A-18 A/B/C/D / CF-18"
+          },
+          {
+            "number": 16,
+            "aircraft": "Super Hornet",
+            "manufacturer": "Boeing",
+            "additional": "F/A-18 E/F"
+          },
+          {
+            "number": 17,
+            "aircraft": "Growler",
+            "manufacturer": "Boeing",
+            "additional": "EA-18G"
+          },
+          {
+            "number": 18,
+            "aircraft": "Fighting Falcon",
+            "manufacturer": "Lockheed Martin",
+            "additional": "F-16"
+          },
+          {
+            "number": 19,
+            "aircraft": "Raptor",
+            "manufacturer": "Lockheed Martin",
+            "additional": "F-22"
+          },
+          {
+            "number": 20,
+            "aircraft": "Lightning II",
+            "manufacturer": "Lockheed Martin",
+            "additional": "F-35 A/B"
+          },
+          {
+            "number": 21,
+            "aircraft": "U-2S",
+            "manufacturer": "Lockheed Martin",
+            "additional": "TR-1"
+          },
+          {
+            "number": 22,
+            "aircraft": "Frogfoot",
+            "manufacturer": "Sukhoi",
+            "additional": "Su-25"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "description": "Jet, Swept Wing, Wing Mounted Engines",
+        "aircraft": [
+          {
+            "number": 23,
+            "aircraft": "A 310",
+            "manufacturer": "Airbus",
+            "additional": "A 310 MRCTT / CC-150 / Polaris"
+          },
+          {
+            "number": 24,
+            "aircraft": "A 318",
+            "manufacturer": "Airbus",
+            "additional": ""
+          },
+          {
+            "number": 25,
+            "aircraft": "A 320",
+            "manufacturer": "Airbus",
+            "additional": "A 319"
+          },
+          {
+            "number": 26,
+            "aircraft": "A 321",
+            "manufacturer": "Airbus",
+            "additional": ""
+          },
+          {
+            "number": 27,
+            "aircraft": "A 330",
+            "manufacturer": "Airbus",
+            "additional": ""
+          },
+          {
+            "number": 28,
+            "aircraft": "A 340",
+            "manufacturer": "Airbus",
+            "additional": ""
+          },
+          {
+            "number": 29,
+            "aircraft": "A 350",
+            "manufacturer": "Airbus",
+            "additional": "Airbus XWB 900"
+          },
+          {
+            "number": 30,
+            "aircraft": "A 380",
+            "manufacturer": "Airbus",
+            "additional": ""
+          },
+          {
+            "number": 31,
+            "aircraft": "A 330 MRTT",
+            "manufacturer": "Airbus",
+            "additional": "Voyager / KC-30 / Phoenix"
+          },
+          {
+            "number": 32,
+            "aircraft": "Coaler ntrolled copy not subjec",
+            "manufacturer": "Antonov 104-A t to amendment when printed",
+            "additional": "An-72 / An-74 -1 Version: 12.0"
+          },
+          {
+            "number": 33,
+            "aircraft": "Condor",
+            "manufacturer": "Antonov",
+            "additional": "An-124"
+          },
+          {
+            "number": 34,
+            "aircraft": "BAe146",
+            "manufacturer": "BAe",
+            "additional": "RJ-85 / 100"
+          },
+          {
+            "number": 35,
+            "aircraft": "737",
+            "manufacturer": "Boeing",
+            "additional": "737-200 to 737 -900/Clipper/C-40"
+          },
+          {
+            "number": 36,
+            "aircraft": "747",
+            "manufacturer": "Boeing",
+            "additional": ""
+          },
+          {
+            "number": 37,
+            "aircraft": "747-404 (LCF)",
+            "manufacturer": "Boeing",
+            "additional": "Dreamlifter"
+          },
+          {
+            "number": 38,
+            "aircraft": "757",
+            "manufacturer": "Boeing",
+            "additional": "C-32"
+          },
+          {
+            "number": 39,
+            "aircraft": "767",
+            "manufacturer": "Boeing",
+            "additional": ""
+          },
+          {
+            "number": 40,
+            "aircraft": "777",
+            "manufacturer": "Boeing",
+            "additional": ""
+          },
+          {
+            "number": 41,
+            "aircraft": "787",
+            "manufacturer": "Boeing",
+            "additional": "Dreamliner"
+          },
+          {
+            "number": 42,
+            "aircraft": "Mercury",
+            "manufacturer": "Boeing",
+            "additional": "E6 Hermes"
+          },
+          {
+            "number": 43,
+            "aircraft": "Rivet Joint",
+            "manufacturer": "Boeing",
+            "additional": "RC-135W"
+          },
+          {
+            "number": 44,
+            "aircraft": "Sentry",
+            "manufacturer": "Boeing",
+            "additional": "E-3"
+          },
+          {
+            "number": 45,
+            "aircraft": "Joint Stars",
+            "manufacturer": "Boeing",
+            "additional": "E-8"
+          },
+          {
+            "number": 46,
+            "aircraft": "Stratofortress",
+            "manufacturer": "Boeing",
+            "additional": "B 52"
+          },
+          {
+            "number": 47,
+            "aircraft": "Stratotanker",
+            "manufacturer": "Boeing",
+            "additional": "KC 135 / C 135F / KC 137"
+          },
+          {
+            "number": 48,
+            "aircraft": "Wedgetail",
+            "manufacturer": "Boeing",
+            "additional": "B737AEW / E 7 / Peace Eagle"
+          },
+          {
+            "number": 49,
+            "aircraft": "Poseidon",
+            "manufacturer": "Boeing",
+            "additional": "P8"
+          },
+          {
+            "number": 50,
+            "aircraft": "KC-46",
+            "manufacturer": "Boeing",
+            "additional": "KC-767 / Pegasus"
+          },
+          {
+            "number": 51,
+            "aircraft": "Globemaster III",
+            "manufacturer": "Boeing (McDonnell Douglas)",
+            "additional": "C-17"
+          },
+          {
+            "number": 52,
+            "aircraft": "Candid",
+            "manufacturer": "Ilyushin",
+            "additional": "IL-76"
+          },
+          {
+            "number": 53,
+            "aircraft": "Galaxy",
+            "manufacturer": "Lockheed Martin",
+            "additional": "C-5M"
+          },
+          {
+            "number": 54,
+            "aircraft": "KC-10",
+            "manufacturer": "McDonnell Douglas",
+            "additional": "Extender"
+          },
+          {
+            "number": 55,
+            "aircraft": "MD11",
+            "manufacturer": "McDonnell Douglas",
+            "additional": ""
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "description": "Jet, Rear Engines",
+        "aircraft": [
+          {
+            "number": 56,
+            "aircraft": "BAe 125",
+            "manufacturer": "BAe",
+            "additional": "Dominie / Hawker 1000"
+          },
+          {
+            "number": 57,
+            "aircraft": "B727",
+            "manufacturer": "Boeing",
+            "additional": ""
+          },
+          {
+            "number": 58,
+            "aircraft": "Sentinel R1",
+            "manufacturer": "Bombardier",
+            "additional": ""
+          },
+          {
+            "number": 59,
+            "aircraft": "Global Express",
+            "manufacturer": "Bombardier",
+            "additional": "BD-700 / XRS/5000/6000/5500/6500/7500"
+          },
+          {
+            "number": 60,
+            "aircraft": "Falcon 200",
+            "manufacturer": "Dassault",
+            "additional": "Falcon 20"
+          },
+          {
+            "number": 61,
+            "aircraft": "ERJ 135/145",
+            "manufacturer": "Embraer",
+            "additional": "Legacy 600/650"
+          },
+          {
+            "number": 62,
+            "aircraft": "EMB R99A",
+            "manufacturer": "Embraer",
+            "additional": "E-99"
+          },
+          {
+            "number": 63,
+            "aircraft": "EMB R99B",
+            "manufacturer": "Embraer",
+            "additional": "R-99"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "description": "Jet, Rear Engines, Straight Wing",
+        "aircraft": [
+          {
+            "number": 64,
+            "aircraft": "Phenom 100",
+            "manufacturer": "Embraer",
+            "additional": "EMB 500"
+          },
+          {
+            "number": 65,
+            "aircraft": "Thunderbolt II",
+            "manufacturer": "Fairchild Republic",
+            "additional": "A10 A/C"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "description": "Jet, Delta Wing/Variable Geometry",
+        "aircraft": [
+          {
+            "number": 66,
+            "aircraft": "Mirage 2000",
+            "manufacturer": "Dassault",
+            "additional": ""
+          },
+          {
+            "number": 67,
+            "aircraft": "Rafale",
+            "manufacturer": "Dassault",
+            "additional": ""
+          },
+          {
+            "number": 68,
+            "aircraft": "Typhoon",
+            "manufacturer": "Eurofighter",
+            "additional": "EF 2000"
+          },
+          {
+            "number": 69,
+            "aircraft": "Fishbed",
+            "manufacturer": "Mikoyan-Guryevich",
+            "additional": "MiG-21 / MiG-21U Mongol"
+          },
+          {
+            "number": 70,
+            "aircraft": "Flogger",
+            "manufacturer": "Mikoyan-Guryevich",
+            "additional": "MiG-23 / MiG-27"
+          },
+          {
+            "number": 71,
+            "aircraft": "Tornado ontrolled copy not subje",
+            "manufacturer": "Panavia 104-A-2 ct to amendment when printed",
+            "additional": "IDS / ECR Version: 12.0"
+          },
+          {
+            "number": 72,
+            "aircraft": "Lancer",
+            "manufacturer": "Rockwell",
+            "additional": "B-1B"
+          },
+          {
+            "number": 73,
+            "aircraft": "Gripen",
+            "manufacturer": "Saab",
+            "additional": "JAS-39"
+          },
+          {
+            "number": 74,
+            "aircraft": "Fencer",
+            "manufacturer": "Sukhoi",
+            "additional": "Su-24"
+          },
+          {
+            "number": 75,
+            "aircraft": "Backfire",
+            "manufacturer": "Tupolev",
+            "additional": "Tu-22M"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "description": "Twin Propellers, Low/Mid Wing",
+        "aircraft": [
+          {
+            "number": 76,
+            "aircraft": "Jetstream",
+            "manufacturer": "BAe",
+            "additional": "31 / 41"
+          },
+          {
+            "number": 77,
+            "aircraft": "(Super) King Air 200",
+            "manufacturer": "Beechcraft",
+            "additional": "B200 / RC12 Huron / Guardrail"
+          },
+          {
+            "number": 78,
+            "aircraft": "Atlantic",
+            "manufacturer": "Dassault (Breguet)",
+            "additional": "Br1150 / Atlantic II"
+          },
+          {
+            "number": 79,
+            "aircraft": "DA 42",
+            "manufacturer": "Diamond",
+            "additional": "Twin Star"
+          },
+          {
+            "number": 80,
+            "aircraft": "Dakota",
+            "manufacturer": "Douglas",
+            "additional": "DC3 / C47 / C53 / C117 / Skytrain"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "description": "Twin/Triple Propellers, High Wing",
+        "aircraft": [
+          {
+            "number": 81,
+            "aircraft": "C-27J",
+            "manufacturer": "Alenia",
+            "additional": "Spartan G-222"
+          },
+          {
+            "number": 82,
+            "aircraft": "Clank",
+            "manufacturer": "Antonov",
+            "additional": "An-30"
+          },
+          {
+            "number": 83,
+            "aircraft": "Cline",
+            "manufacturer": "Antonov",
+            "additional": "An-32"
+          },
+          {
+            "number": 84,
+            "aircraft": "Coke",
+            "manufacturer": "Antonov",
+            "additional": "An-24"
+          },
+          {
+            "number": 85,
+            "aircraft": "Curl",
+            "manufacturer": "Antonov",
+            "additional": "An-26"
+          },
+          {
+            "number": 86,
+            "aircraft": "Islander",
+            "manufacturer": "Britten Norman",
+            "additional": "BN-2 Defender"
+          },
+          {
+            "number": 87,
+            "aircraft": "Aviocar",
+            "manufacturer": "Casa",
+            "additional": "C-212"
+          },
+          {
+            "number": 88,
+            "aircraft": "CN-235",
+            "manufacturer": "CASA / Airbus",
+            "additional": "CN-295 / Persuader / HH-144 Ocean Sentry"
+          },
+          {
+            "number": 89,
+            "aircraft": "F-50/60",
+            "manufacturer": "Fokker",
+            "additional": ""
+          },
+          {
+            "number": 90,
+            "aircraft": "Greyhound",
+            "manufacturer": "Grumman",
+            "additional": "C-2"
+          },
+          {
+            "number": 91,
+            "aircraft": "Hawkeye",
+            "manufacturer": "Northrop Grumman",
+            "additional": "E-2C"
+          },
+          {
+            "number": 92,
+            "aircraft": "C-160",
+            "manufacturer": "Transall",
+            "additional": ""
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "description": "Four Propellers",
+        "aircraft": [
+          {
+            "number": 93,
+            "aircraft": "A400M",
+            "manufacturer": "Airbus",
+            "additional": "Atlas"
+          },
+          {
+            "number": 94,
+            "aircraft": "Cub",
+            "manufacturer": "Antonov",
+            "additional": "An-12"
+          },
+          {
+            "number": 95,
+            "aircraft": "Lancaster",
+            "manufacturer": "Avro",
+            "additional": ""
+          },
+          {
+            "number": 96,
+            "aircraft": "May",
+            "manufacturer": "Ilyushin",
+            "additional": "IL-38"
+          },
+          {
+            "number": 97,
+            "aircraft": "Orion",
+            "manufacturer": "Lockheed",
+            "additional": "P-3C / CP-140 Aurora"
+          },
+          {
+            "number": 98,
+            "aircraft": "Hercules",
+            "manufacturer": "Lockheed Martin",
+            "additional": "C-130 - L100"
+          },
+          {
+            "number": 99,
+            "aircraft": "Bear",
+            "manufacturer": "Tupolev",
+            "additional": "Tu-95 / Tu-142"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "description": "Single Propeller, Low Wing, Retractable Undercarriage",
+        "aircraft": [
+          {
+            "number": 100,
+            "aircraft": "Texan II",
+            "manufacturer": "Beechcraft",
+            "additional": "T-6C"
+          },
+          {
+            "number": 101,
+            "aircraft": "Prefect T1",
+            "manufacturer": "Grob",
+            "additional": "G 120TP"
+          },
+          {
+            "number": 102,
+            "aircraft": "Hurricane",
+            "manufacturer": "Hawker",
+            "additional": ""
+          },
+          {
+            "number": 103,
+            "aircraft": "PC-9",
+            "manufacturer": "Pilatus",
+            "additional": ""
+          },
+          {
+            "number": 104,
+            "aircraft": "Spitfire",
+            "manufacturer": "Supermarine",
+            "additional": ""
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "description": "Single Propeller, Low Wing, Fixed Undercarriage",
+        "aircraft": [
+          {
+            "number": 105,
+            "aircraft": "Tutor",
+            "manufacturer": "Grob",
+            "additional": "G115E"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "description": "Single Propeller, High Wing",
+        "aircraft": [
+          {
+            "number": 106,
+            "aircraft": "C-150",
+            "manufacturer": "Cessna",
+            "additional": "C-152"
+          },
+          {
+            "number": 107,
+            "aircraft": "Supporter ontrolled copy not subje",
+            "manufacturer": "Saab 104-A-3 ct to amendment when printed",
+            "additional": "MFI-17 Version: 12.0"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "description": "Amphibians, Biplanes and Twin Boom",
+        "aircraft": [
+          {
+            "number": 108,
+            "aircraft": "Be200",
+            "manufacturer": "Beriev",
+            "additional": "Altair"
+          },
+          {
+            "number": 109,
+            "aircraft": "Mail",
+            "manufacturer": "Beriev",
+            "additional": "Be12"
+          }
+        ]
+      },
+      {
+        "number": 14,
+        "description": "Helicopters",
+        "aircraft": [
+          {
+            "number": 110,
+            "aircraft": "Puma",
+            "manufacturer": "Aerospatiale",
+            "additional": "SA-330"
+          },
+          {
+            "number": 111,
+            "aircraft": "Super Puma",
+            "manufacturer": "Airbus",
+            "additional": "H215 / SA-532 Cougar"
+          },
+          {
+            "number": 112,
+            "aircraft": "AW109",
+            "manufacturer": "Agusta Westland / Leonardo",
+            "additional": "A109 Power / Power Elite"
+          },
+          {
+            "number": 113,
+            "aircraft": "A129",
+            "manufacturer": "Agusta Westland / Leonardo",
+            "additional": "Mangusta / T129"
+          },
+          {
+            "number": 114,
+            "aircraft": "Griffin",
+            "manufacturer": "Agusta Westland / Bell",
+            "additional": "Bell/AW412 / CH416 / Griffon"
+          },
+          {
+            "number": 115,
+            "aircraft": "Merlin",
+            "manufacturer": "Agusta Westland / Leonardo",
+            "additional": "EH-101 / Cormorant"
+          },
+          {
+            "number": 116,
+            "aircraft": "Dauphin",
+            "manufacturer": "Airbus Helicopters",
+            "additional": "AS-365 AS-565 Panther"
+          },
+          {
+            "number": 117,
+            "aircraft": "H 135",
+            "manufacturer": "Airbus Helicopters",
+            "additional": "Juno EC 135"
+          },
+          {
+            "number": 118,
+            "aircraft": "EC 145",
+            "manufacturer": "Airbus Helicopters",
+            "additional": "BK117"
+          },
+          {
+            "number": 120,
+            "aircraft": "H 145",
+            "manufacturer": "Airbus Helicopters",
+            "additional": "Jupiter"
+          },
+          {
+            "number": 121,
+            "aircraft": "Ecureuil",
+            "manufacturer": "Airbus Helicopters",
+            "additional": "AS-350 Squirrel AS-355 Fennec"
+          },
+          {
+            "number": 122,
+            "aircraft": "AW159",
+            "manufacturer": "Leonardo",
+            "additional": "Wildcat"
+          },
+          {
+            "number": 123,
+            "aircraft": "AW189",
+            "manufacturer": "Leonardo",
+            "additional": "AW149"
+          },
+          {
+            "number": 124,
+            "aircraft": "AH-1",
+            "manufacturer": "Bell",
+            "additional": "Cobra / Super Cobra"
+          },
+          {
+            "number": 125,
+            "aircraft": "AH-1Z",
+            "manufacturer": "Bell",
+            "additional": "Viper"
+          },
+          {
+            "number": 126,
+            "aircraft": "UH-1N",
+            "manufacturer": "Bell",
+            "additional": "Bell 212 / AB 212 / 204 / 205 / Iroquois"
+          },
+          {
+            "number": 127,
+            "aircraft": "UH-1Y",
+            "manufacturer": "Bell",
+            "additional": "Venom"
+          },
+          {
+            "number": 128,
+            "aircraft": "Osprey",
+            "manufacturer": "Bell",
+            "additional": "V-22"
+          },
+          {
+            "number": 129,
+            "aircraft": "Apache",
+            "manufacturer": "Boeing",
+            "additional": "AH-64 / Longbow / Guardian"
+          },
+          {
+            "number": 130,
+            "aircraft": "Chinook",
+            "manufacturer": "Boeing",
+            "additional": "CH-47"
+          },
+          {
+            "number": 131,
+            "aircraft": "S-92",
+            "manufacturer": "Sikorsky",
+            "additional": "CH-148 Cyclone"
+          },
+          {
+            "number": 132,
+            "aircraft": "UH-60",
+            "manufacturer": "Sikorsky",
+            "additional": "Blackhawk / MH-60"
+          },
+          {
+            "number": 133,
+            "aircraft": "S-70 trolled copy not subject",
+            "manufacturer": "Sikorsky 104-A-4 to amendment when printed",
+            "additional": "SH-60 / Seahawk / Jayhawk Version: 12.0 Annex B to ACTO 104"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "list": 2,
+    "groups": [
+      {
+        "number": 1,
+        "description": "Jet, Fuselage Engine(s)",
+        "aircraft": [
+          {
+            "number": 1,
+            "aircraft": "Hawk 200",
+            "manufacturer": "BAe",
+            "additional": ""
+          },
+          {
+            "number": 2,
+            "aircraft": "Mirage F1",
+            "manufacturer": "Dassault",
+            "additional": ""
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "description": "Jet, Straight Wing, Fuselage Engine(s)",
+        "aircraft": [
+          {
+            "number": 3,
+            "aircraft": "Albatros",
+            "manufacturer": "Aero Vodochody",
+            "additional": "L-39 / L-59"
+          },
+          {
+            "number": 4,
+            "aircraft": "Freedom Fighter",
+            "manufacturer": "Northrop",
+            "additional": "F-5 / Tiger II"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "description": "Jet, Swept Wing, Wing Mounted Engines)",
+        "aircraft": [
+          {
+            "number": 5,
+            "aircraft": "A220",
+            "manufacturer": "Airbus / Bombardier",
+            "additional": "CS100 / CS300"
+          },
+          {
+            "number": 6,
+            "aircraft": "A300",
+            "manufacturer": "Airbus",
+            "additional": ""
+          },
+          {
+            "number": 7,
+            "aircraft": "AN-148",
+            "manufacturer": "Antonov",
+            "additional": ""
+          },
+          {
+            "number": 8,
+            "aircraft": "Mainstay",
+            "manufacturer": "Beriev",
+            "additional": "A50"
+          },
+          {
+            "number": 9,
+            "aircraft": "E-767",
+            "manufacturer": "Boeing",
+            "additional": ""
+          },
+          {
+            "number": 10,
+            "aircraft": "Dornier 328 Jet",
+            "manufacturer": "Dornier (Fairchild)",
+            "additional": ""
+          },
+          {
+            "number": 11,
+            "aircraft": "Embraer 170/190",
+            "manufacturer": "Embraer",
+            "additional": "E175 / E195"
+          },
+          {
+            "number": 12,
+            "aircraft": "C-390",
+            "manufacturer": "Embraer",
+            "additional": ""
+          },
+          {
+            "number": 13,
+            "aircraft": "Midas",
+            "manufacturer": "Ilyushin",
+            "additional": "IL-78"
+          },
+          {
+            "number": 14,
+            "aircraft": "Camber",
+            "manufacturer": "Ilyushin",
+            "additional": "IL-86"
+          },
+          {
+            "number": 15,
+            "aircraft": "Maxdome",
+            "manufacturer": "Ilyushin",
+            "additional": "IL-80 / IL86VKP"
+          },
+          {
+            "number": 16,
+            "aircraft": "IL-96",
+            "manufacturer": "Ilyushin",
+            "additional": ""
+          },
+          {
+            "number": 17,
+            "aircraft": "Tu-204",
+            "manufacturer": "Tupolev",
+            "additional": "Tu-214"
+          },
+          {
+            "number": 18,
+            "aircraft": "SuperJet",
+            "manufacturer": "Sukhoi",
+            "additional": "SJ100"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "description": "Jet, Rear Engines)",
+        "aircraft": [
+          {
+            "number": 19,
+            "aircraft": "Boeing 717",
+            "manufacturer": "Boeing",
+            "additional": "MD-80 / MD-90"
+          },
+          {
+            "number": 20,
+            "aircraft": "Challenger 300",
+            "manufacturer": "Bombardier Canadair",
+            "additional": "BD-100 CL-350"
+          },
+          {
+            "number": 21,
+            "aircraft": "Challenger 600",
+            "manufacturer": "Bombardier Canadair",
+            "additional": "CL-600 / 601 / 604 / 605 / 650"
+          },
+          {
+            "number": 22,
+            "aircraft": "CRJ100/200",
+            "manufacturer": "Bombardier Canadair",
+            "additional": ""
+          },
+          {
+            "number": 23,
+            "aircraft": "CRJ700",
+            "manufacturer": "Bombardier Canadair",
+            "additional": "CRJ900 / CRJ1000"
+          },
+          {
+            "number": 24,
+            "aircraft": "Citation III/VI/VII",
+            "manufacturer": "Cessna",
+            "additional": "650"
+          },
+          {
+            "number": 25,
+            "aircraft": "Citation X trolled copy not subject",
+            "manufacturer": "Cessna 104-B-1 to amendment when printed",
+            "additional": "750 Version: 12.0"
+          },
+          {
+            "number": 26,
+            "aircraft": "Falcon 10",
+            "manufacturer": "Dassault",
+            "additional": "100 / MER"
+          },
+          {
+            "number": 27,
+            "aircraft": "Falcon 900",
+            "manufacturer": "Dassault",
+            "additional": "900LX"
+          },
+          {
+            "number": 28,
+            "aircraft": "Fokker 70/100",
+            "manufacturer": "Fokker",
+            "additional": ""
+          },
+          {
+            "number": 29,
+            "aircraft": "Gulfstream II/III",
+            "manufacturer": "Gulfstream Aerospace",
+            "additional": "G-1159 / C20A"
+          },
+          {
+            "number": 30,
+            "aircraft": "Gulfstream IV/V",
+            "manufacturer": "Gulfstream Aerospace",
+            "additional": "C-37A"
+          },
+          {
+            "number": 31,
+            "aircraft": "Classic",
+            "manufacturer": "Ilyushin",
+            "additional": "IL-62"
+          },
+          {
+            "number": 32,
+            "aircraft": "Beechjet 400",
+            "manufacturer": "Raytheon",
+            "additional": "T-1 Jayhawk / T-400"
+          },
+          {
+            "number": 33,
+            "aircraft": "Careless",
+            "manufacturer": "Tupolev",
+            "additional": "Tu-154"
+          },
+          {
+            "number": 34,
+            "aircraft": "Crusty",
+            "manufacturer": "Tupolev",
+            "additional": "Tu-134"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "description": "Jet, Rear Engines, Straight Wing)",
+        "aircraft": [
+          {
+            "number": 35,
+            "aircraft": "Learjet 35/36",
+            "manufacturer": "Learjet",
+            "additional": "C-21A / U-36A"
+          },
+          {
+            "number": 36,
+            "aircraft": "Learjet 45",
+            "manufacturer": "Learjet (Bombardier)",
+            "additional": ""
+          },
+          {
+            "number": 37,
+            "aircraft": "Learjet 55/60",
+            "manufacturer": "Learjet",
+            "additional": ""
+          },
+          {
+            "number": 38,
+            "aircraft": "Citation I",
+            "manufacturer": "Cessna",
+            "additional": "500"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "description": "Jet, Delta Wing/Variable Geometry)",
+        "aircraft": [
+          {
+            "number": 39,
+            "aircraft": "Fitter",
+            "manufacturer": "Sukhoi",
+            "additional": "Su-17 / 20 / 22"
+          },
+          {
+            "number": 40,
+            "aircraft": "Blackjack",
+            "manufacturer": "Tupolev",
+            "additional": "Tu-160"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "description": "Twin Propellers, Low/Mid Wing)",
+        "aircraft": [
+          {
+            "number": 41,
+            "aircraft": "Beech 1900C",
+            "manufacturer": "Beech",
+            "additional": ""
+          },
+          {
+            "number": 42,
+            "aircraft": "Beech 1900D",
+            "manufacturer": "Beech",
+            "additional": ""
+          },
+          {
+            "number": 43,
+            "aircraft": "Beech 99",
+            "manufacturer": "Beechcraft",
+            "additional": ""
+          },
+          {
+            "number": 44,
+            "aircraft": "King Air 90/100",
+            "manufacturer": "Beech Raytheon",
+            "additional": "350 / 350ER / Avenger / Shadow /"
+          },
+          {
+            "number": 45,
+            "aircraft": "(Super) King Air 300",
+            "manufacturer": "Beech Raytheon",
+            "additional": "MC12X"
+          },
+          {
+            "number": 46,
+            "aircraft": "Titan",
+            "manufacturer": "Cessna",
+            "additional": "404 / C-28"
+          },
+          {
+            "number": 47,
+            "aircraft": "Bandeirante",
+            "manufacturer": "Embraer",
+            "additional": "EMB-110 / C-95"
+          },
+          {
+            "number": 48,
+            "aircraft": "Brasilia",
+            "manufacturer": "Embraer",
+            "additional": "EMB-120 / C-97"
+          },
+          {
+            "number": 49,
+            "aircraft": "Xingu",
+            "manufacturer": "Embraer",
+            "additional": "EMB-121"
+          },
+          {
+            "number": 50,
+            "aircraft": "Metro",
+            "manufacturer": "Fairchild (Swearingen)",
+            "additional": "C-26 Merlin"
+          },
+          {
+            "number": 51,
+            "aircraft": "Apache / Aztec",
+            "manufacturer": "Piper",
+            "additional": "PA-23 / U11A"
+          },
+          {
+            "number": 52,
+            "aircraft": "Cheyenne III",
+            "manufacturer": "Piper",
+            "additional": "PA-42"
+          },
+          {
+            "number": 53,
+            "aircraft": "Navajo",
+            "manufacturer": "Piper",
+            "additional": "PA-31"
+          },
+          {
+            "number": 54,
+            "aircraft": "Seneca",
+            "manufacturer": "Piper",
+            "additional": "PA-34 / EMB-810"
+          },
+          {
+            "number": 55,
+            "aircraft": "Saab 2000",
+            "manufacturer": "Saab",
+            "additional": ""
+          },
+          {
+            "number": 56,
+            "aircraft": "Saab 340 trolled copy not subject",
+            "manufacturer": "Saab 104-B-2 to amendment when printed",
+            "additional": "TP100/S100D Version: 12.0"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "description": "Twin/Triple Propellers, High Wing)",
+        "aircraft": [
+          {
+            "number": 57,
+            "aircraft": "ATR-42                 A",
+            "manufacturer": "vions de Transport Regional",
+            "additional": "ATR-72"
+          },
+          {
+            "number": 58,
+            "aircraft": "Trislander",
+            "manufacturer": "Britten Norman",
+            "additional": ""
+          },
+          {
+            "number": 59,
+            "aircraft": "Dash 8",
+            "manufacturer": "De Havilland Canada",
+            "additional": "CC-142 / E-9 Widget"
+          },
+          {
+            "number": 60,
+            "aircraft": "Twin Otter",
+            "manufacturer": "De Havilland Canada",
+            "additional": "DHC-6"
+          },
+          {
+            "number": 61,
+            "aircraft": "Dornier 228",
+            "manufacturer": "Dornier",
+            "additional": ""
+          },
+          {
+            "number": 62,
+            "aircraft": "Dornier 328",
+            "manufacturer": "Dornier (Fairchild)",
+            "additional": "C-146A Wolfhound"
+          },
+          {
+            "number": 63,
+            "aircraft": "Turbolet",
+            "manufacturer": "Let",
+            "additional": "L-410"
+          },
+          {
+            "number": 64,
+            "aircraft": "Avanti",
+            "manufacturer": "Piaggio",
+            "additional": "P-180"
+          },
+          {
+            "number": 65,
+            "aircraft": "Cash",
+            "manufacturer": "PZL (Antonov)",
+            "additional": "An-28 / M-28 Bryza / C-145 Skytruck"
+          },
+          {
+            "number": 66,
+            "aircraft": "Shorts 330",
+            "manufacturer": "Shorts",
+            "additional": "C-23 Sherpa"
+          },
+          {
+            "number": 67,
+            "aircraft": "Shorts 360",
+            "manufacturer": "Shorts",
+            "additional": ""
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "description": "Four Propellers)",
+        "aircraft": [
+          {
+            "number": 68,
+            "aircraft": "AN-70",
+            "manufacturer": "Antonov",
+            "additional": ""
+          },
+          {
+            "number": 69,
+            "aircraft": "Coot",
+            "manufacturer": "Ilyushin",
+            "additional": "IL-20"
+          },
+          {
+            "number": 70,
+            "aircraft": "AC-130",
+            "manufacturer": "Lockheed",
+            "additional": "Spectre / Spooky / Ghostrider"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "description": "Single Propeller, Low Wing, Retractable Undercarriage)",
+        "aircraft": [
+          {
+            "number": 71,
+            "aircraft": "Super Tucano       Embra",
+            "manufacturer": "EMB- er",
+            "additional": "314"
+          },
+          {
+            "number": 72,
+            "aircraft": "PC-7",
+            "manufacturer": "Pilatus",
+            "additional": ""
+          },
+          {
+            "number": 73,
+            "aircraft": "PC-12",
+            "manufacturer": "Pilatus",
+            "additional": "U-28A"
+          },
+          {
+            "number": 74,
+            "aircraft": "PC-21",
+            "manufacturer": "Pilatus",
+            "additional": ""
+          },
+          {
+            "number": 75,
+            "aircraft": "Arrow III",
+            "manufacturer": "Piper",
+            "additional": "PA-28R"
+          },
+          {
+            "number": 76,
+            "aircraft": "TBM-700",
+            "manufacturer": "Socata",
+            "additional": ""
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "description": "Single Propeller, Low Wing, Fixed Undercarriage)",
+        "aircraft": [
+          {
+            "number": 77,
+            "aircraft": "Cheetah",
+            "manufacturer": "Grumman American",
+            "additional": "AA-5 / Traveller / Tiger 15"
+          },
+          {
+            "number": 78,
+            "aircraft": "Cherokee",
+            "manufacturer": "Piper",
+            "additional": "PA-28 Warrior II"
+          },
+          {
+            "number": 79,
+            "aircraft": "Tomahawk",
+            "manufacturer": "Piper",
+            "additional": "PA-38"
+          },
+          {
+            "number": 80,
+            "aircraft": "DR 400",
+            "manufacturer": "Robin",
+            "additional": "DR 500"
+          },
+          {
+            "number": 81,
+            "aircraft": "Firefly",
+            "manufacturer": "Slingsby",
+            "additional": "T-67"
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "description": "Single Propeller, High Wing, Fixed Undercarriage)",
+        "aircraft": [
+          {
+            "number": 82,
+            "aircraft": "C172",
+            "manufacturer": "Cessna",
+            "additional": "C175 Skyhawk / Cutlass"
+          },
+          {
+            "number": 83,
+            "aircraft": "C177",
+            "manufacturer": "Cessna",
+            "additional": "Cardinal"
+          },
+          {
+            "number": 84,
+            "aircraft": "C210",
+            "manufacturer": "Cessna",
+            "additional": "Centurion"
+          },
+          {
+            "number": 85,
+            "aircraft": "Beaver",
+            "manufacturer": "De Havilland Canada",
+            "additional": ""
+          },
+          {
+            "number": 86,
+            "aircraft": "PC-6",
+            "manufacturer": "Pilatus",
+            "additional": "Turbo Porter"
+          }
+        ]
+      },
+      {
+        "number": 13,
+        "description": "Amphibians, Biplanes & Twin Booms)",
+        "aircraft": [
+          {
+            "number": 87,
+            "aircraft": "Colt",
+            "manufacturer": "Antonov",
+            "additional": "An-2"
+          },
+          {
+            "number": 88,
+            "aircraft": "CL-215",
+            "manufacturer": "Canadair",
+            "additional": ""
+          },
+          {
+            "number": 89,
+            "aircraft": "CL-415",
+            "manufacturer": "Canadair",
+            "additional": ""
+          }
+        ]
+      },
+      {
+        "number": 12,
+        "description": "Helicopters)",
+        "aircraft": [
+          {
+            "number": 90,
+            "aircraft": "Gazelle",
+            "manufacturer": "Aerospatiale",
+            "additional": "SA-341/342"
+          },
+          {
+            "number": 91,
+            "aircraft": "H155",
+            "manufacturer": "Airbus Helicopters",
+            "additional": "EC155"
+          },
+          {
+            "number": 92,
+            "aircraft": "Tiger",
+            "manufacturer": "Airbus Helicopters",
+            "additional": "EC665"
+          },
+          {
+            "number": 93,
+            "aircraft": "Bell 214",
+            "manufacturer": "Bell",
+            "additional": ""
+          },
+          {
+            "number": 94,
+            "aircraft": "Bell 222",
+            "manufacturer": "Bell",
+            "additional": ""
+          },
+          {
+            "number": 95,
+            "aircraft": "Bell 407",
+            "manufacturer": "Bell",
+            "additional": ""
+          },
+          {
+            "number": 96,
+            "aircraft": "Kiowa",
+            "manufacturer": "Bell",
+            "additional": "206 OH-58 Jet Ranger"
+          },
+          {
+            "number": 97,
+            "aircraft": "Long Ranger",
+            "manufacturer": "Bell",
+            "additional": "Bell 206L"
+          },
+          {
+            "number": 98,
+            "aircraft": "BO-105",
+            "manufacturer": "Bolkow (MBB)",
+            "additional": ""
+          },
+          {
+            "number": 99,
+            "aircraft": "Helix",
+            "manufacturer": "Kamov",
+            "additional": "Ka-27 / 28 / 31 / 32"
+          },
+          {
+            "number": 100,
+            "aircraft": "Hokum",
+            "manufacturer": "Kamov",
+            "additional": "Ka-50 / 52"
+          },
+          {
+            "number": 102,
+            "aircraft": "AW139",
+            "manufacturer": "Leonardo",
+            "additional": ""
+          },
+          {
+            "number": 103,
+            "aircraft": "NH-90",
+            "manufacturer": "Leonardo / NH Industries",
+            "additional": "SH-90 / Caiman / Sea Lion MD 500/MH-6 Little Bird/Hughes"
+          },
+          {
+            "number": 104,
+            "aircraft": "MD-500E",
+            "manufacturer": "MD Helicopters",
+            "additional": "500/OH-6 Cayuse"
+          },
+          {
+            "number": 105,
+            "aircraft": "MD-520N",
+            "manufacturer": "MD Helicopters",
+            "additional": ""
+          },
+          {
+            "number": 106,
+            "aircraft": "MD-600N",
+            "manufacturer": "MD Helicopters",
+            "additional": ""
+          },
+          {
+            "number": 107,
+            "aircraft": "Explorer",
+            "manufacturer": "MD Helicopters",
+            "additional": "MD-900 / MD-902"
+          },
+          {
+            "number": 108,
+            "aircraft": "Halo",
+            "manufacturer": "Mil",
+            "additional": "Mil-26"
+          },
+          {
+            "number": 109,
+            "aircraft": "Havoc",
+            "manufacturer": "Mil",
+            "additional": "Mil-28"
+          },
+          {
+            "number": 110,
+            "aircraft": "Haze",
+            "manufacturer": "Mil",
+            "additional": "Mil-14"
+          },
+          {
+            "number": 111,
+            "aircraft": "Hind",
+            "manufacturer": "Mil",
+            "additional": "Mil -24 / Mil-35"
+          },
+          {
+            "number": 112,
+            "aircraft": "Hip",
+            "manufacturer": "Mil",
+            "additional": "Mil-8 / Mil-17"
+          },
+          {
+            "number": 113,
+            "aircraft": "R-22/R-44",
+            "manufacturer": "Robinson",
+            "additional": ""
+          },
+          {
+            "number": 114,
+            "aircraft": "Schweizer 300",
+            "manufacturer": "Schweizer (Hughes)",
+            "additional": "Hughes 300"
+          },
+          {
+            "number": 115,
+            "aircraft": "S-61N",
+            "manufacturer": "Sikorsky",
+            "additional": "SH-3 Sea King"
+          },
+          {
+            "number": 116,
+            "aircraft": "S-76",
+            "manufacturer": "Sikorsky",
+            "additional": ""
+          },
+          {
+            "number": 117,
+            "aircraft": "Sea Stallion",
+            "manufacturer": "Sikorsky",
+            "additional": "S-65 / CH-53 / MH-53 / Pave Low"
+          },
+          {
+            "number": 118,
+            "aircraft": "Super Stallion",
+            "manufacturer": "Sikorsky 104-B-4",
+            "additional": "S-80 / SH-53 / CH-53E Version: 12.0"
+          }
+        ]
+      }
+    ]
+  }
+]
