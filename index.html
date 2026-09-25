@@ -49,6 +49,7 @@
 
     .controls {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
       margin: 20px 0;
@@ -76,6 +77,11 @@
     }
 
     button:disabled {
+      opacity: .45;
+      cursor: not-allowed;
+    }
+
+    button[aria-disabled="true"] {
       opacity: .45;
       cursor: not-allowed;
     }
@@ -149,13 +155,38 @@
     }
 
     #info {
-      margin: 22px auto 0;
+      position: fixed;
+      top: 12px;
+      left: 50%;
+      z-index: 10;
+      width: min(800px, calc(100vw - 24px));
+      margin: 0;
       max-width: 800px;
+      transform: translateX(-50%);
       padding: 20px;
       text-align: center;
       background: #17241d;
       border: 1px solid #31533e;
       border-radius: 10px;
+      box-shadow: 0 8px 24px #000b;
+    }
+
+    #closeInfo {
+      position: absolute;
+      top: 6px;
+      right: 8px;
+      width: 28px;
+      height: 28px;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    #closeInfo:hover {
+      color: var(--text);
     }
 
     #info.hidden {
@@ -165,6 +196,7 @@
     #aircraft {
       margin: 0 0 8px;
       font-size: 28px;
+      overflow-wrap: anywhere;
     }
 
     .meta {
@@ -196,8 +228,8 @@
         <option value="List 2">List 2</option>
       </select>
       <select id="photoCount">
-        <option value="6">Learning (6 photos)</option>
-        <option value="1">Quiz (1 photo)</option>
+        <option value="6">6 photos</option>
+        <option value="1">1 photo</option>
       </select>
       <button id="reveal" class="primary">Reveal</button>
       <button id="next">Next</button>
@@ -205,6 +237,7 @@
 
     <section id="photos" aria-live="polite"></section>
     <section id="info" class="hidden">
+      <button id="closeInfo" type="button" aria-label="Close reveal">×</button>
       <h2 id="aircraft"></h2>
       <div id="details" class="meta"></div>
     </section>
@@ -267,7 +300,7 @@
       attempted.add(current);
       revealed = false;
       document.getElementById("info").classList.add("hidden");
-      document.getElementById("reveal").disabled = false;
+      document.getElementById("reveal").setAttribute("aria-disabled", "false");
       loadImages(current, getPhotoCount(), attempted);
     }
 
@@ -442,10 +475,31 @@
         `List ${current.list} • Aircraft ${current.number}` +
         ` • Group ${current.group}: ${current.groupDescription}`;
       document.getElementById("info").classList.remove("hidden");
-      document.getElementById("reveal").disabled = true;
+      document.getElementById("reveal").setAttribute("aria-disabled", "true");
     }
 
-    document.getElementById("reveal").addEventListener("click", reveal);
+    function hideReveal() {
+      document.getElementById("info").classList.add("hidden");
+      document.getElementById("reveal").setAttribute("aria-disabled", "false");
+      revealed = false;
+    }
+
+    document.getElementById("reveal").addEventListener("click", () => {
+      if (revealed) {
+        hideReveal();
+      } else {
+        reveal();
+      }
+    });
+    document.getElementById("info").addEventListener("click", hideReveal);
+    document.addEventListener("click", event => {
+      const info = document.getElementById("info");
+      const target = event.target;
+      if (!info.classList.contains("hidden") &&
+        !info.contains(target) && !(target instanceof Element && target.closest("#reveal"))) {
+        hideReveal();
+      }
+    });
     document.getElementById("next").addEventListener("click", () => chooseRandom());
     document.getElementById("listSelect").addEventListener("change", () => {
       if (aircraft.length) chooseRandom();
