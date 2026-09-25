@@ -322,15 +322,52 @@
       card.appendChild(link);
     }
 
+    // Cached lookups avoid repeat network round-trips across page reloads
+    // (the app has no server, so localStorage is the only caching option).
+    const SEARCH_CACHE_TTL = 24 * 60 * 60 * 1000; // 1 day
+    const IMAGE_CACHE_TTL = 7 * 24 * 60 * 60 * 1000; // 1 week
+
+    function cacheRead(key) {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(key));
+        if (!parsed || Date.now() - parsed.time > parsed.ttl) return undefined;
+        return parsed.value;
+      } catch {
+        return undefined;
+      }
+    }
+
+    function cacheWrite(key, value, ttl) {
+      try {
+        localStorage.setItem(key, JSON.stringify({ time: Date.now(), ttl, value }));
+      } catch {
+        // Storage full/unavailable/private-mode: fall back to no caching.
+      }
+    }
+
+    async function fetchWithTimeout(url, ms = 6000) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), ms);
+      try {
+        return await fetch(url, { signal: controller.signal });
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
     async function getCommonsImages(item, limit = 6) {
+      const cacheKey = `airreccy:commons:${item.searchName}`;
+      const cached = cacheRead(cacheKey);
+      if (cached) return cached;
+
       const api =
         "https://commons.wikimedia.org/w/api.php" +
         "?action=query&generator=search&gsrnamespace=6" +
         `&gsrlimit=${limit}&prop=imageinfo&iiprop=url|extmetadata|mime` +
-        "&iiurlwidth=1200&format=json&origin=*";
+        "&iiurlwidth=800&format=json&origin=*";
 
       const url = api + "&gsrsearch=" + encodeURIComponent(item.searchName);
-      const response = await fetch(url);
+      const response = await fetchWithTimeout(url);
       if (!response.ok) throw new Error("Commons API request failed");
       const json = await response.json();
 
@@ -339,7 +376,7 @@
 
       // Prefer ordinary raster photographs. Avoid SVG diagrams and other files
       // which are less useful for aircraft recognition.
-      return pages.filter(page => {
+      const images = pages.filter(page => {
         const info = page.imageinfo?.[0];
         const mime = (info?.mime || "").toLowerCase();
         return info && (!mime || mime.startsWith("image/jpeg") ||
@@ -353,32 +390,51 @@
           source: "Commons"
         };
       });
+
+      cacheWrite(cacheKey, images, SEARCH_CACHE_TTL);
+      return images;
     }
 
     async function getOpenverseImages(item, limit = 6) {
+      const cacheKey = `airreccy:openverse:${item.searchName}`;
+      const cached = cacheRead(cacheKey);
+      if (cached) return cached;
+
       const url = "https://api.openverse.org/v1/images/" +
         `?page_size=${limit}&q=${encodeURIComponent(item.searchName)}`;
-      const response = await fetch(url);
+      const response = await fetchWithTimeout(url);
       if (!response.ok) throw new Error("Openverse API request failed");
       const json = await response.json();
 
-      return (json.results || []).filter(result => result.thumbnail || result.url).map(result => ({
+      const images = (json.results || []).filter(result => result.thumbnail || result.url).map(result => ({
         imageUrl: result.thumbnail || result.url,
         fallbackImageUrl: result.thumbnail ? result.url : null,
         fileUrl: result.foreign_landing_url || result.url,
         source: "Openverse"
       }));
+
+      cacheWrite(cacheKey, images, SEARCH_CACHE_TTL);
+      return images;
     }
 
     function getUsableImage(image) {
+      const cacheKey = `airreccy:usable:${image.imageUrl}`;
+      const cached = cacheRead(cacheKey);
+      if (cached === false) return Promise.resolve(null);
+      if (typeof cached === "string") return Promise.resolve({ ...image, imageUrl: cached });
+
       return new Promise(resolve => {
         const probe = new Image();
         let fallbackTried = false;
-        const timeout = setTimeout(() => resolve(null), 8000);
+        const timeout = setTimeout(() => {
+          cacheWrite(cacheKey, false, IMAGE_CACHE_TTL);
+          resolve(null);
+        }, 5000);
 
         probe.referrerPolicy = "no-referrer";
         probe.onload = () => {
           clearTimeout(timeout);
+          cacheWrite(cacheKey, probe.src, IMAGE_CACHE_TTL);
           resolve({ ...image, imageUrl: probe.src });
         };
         probe.onerror = () => {
@@ -388,6 +444,7 @@
             return;
           }
           clearTimeout(timeout);
+          cacheWrite(cacheKey, false, IMAGE_CACHE_TTL);
           resolve(null);
         };
         probe.src = image.imageUrl;
@@ -436,7 +493,9 @@
         });
       }
 
-      const candidateLimit = count === 1 ? 6 : orderedImages.length;
+      // Only probe as many candidates as are plausibly needed, plus a small
+      // margin for failures, instead of validating every result up front.
+      const candidateLimit = count === 1 ? 6 : Math.min(orderedImages.length, count + 6);
       const checkedImages = await Promise.all(
         orderedImages.slice(0, candidateLimit).map(getUsableImage)
       );
