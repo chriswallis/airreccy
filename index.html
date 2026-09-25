@@ -226,32 +226,17 @@
           throw new Error(`Failed to load aircraft data: ${response.status}`);
         }
         const data = await response.json();
-        aircraft = (Array.isArray(data) ? data : []).flatMap(section => {
-          const groups = Array.isArray(section?.groups) ? section.groups : [];
-          if (groups.length) {
-            return groups.flatMap(group => {
-              const items = Array.isArray(group?.aircraft) ? group.aircraft : [group];
-              return items.map(item => ({
-                ...item,
-                list: item.list ?? section.list,
-                group: item.group ?? group.number ?? null,
-                groupDescription: item.groupDescription ?? group.description ?? "",
-                name: item.name || [item.aircraft, item.manufacturer, item.additional].filter(Boolean).join(" "),
-                searchName: item.searchName || [item.manufacturer, item.additional, item.aircraft].filter(Boolean).join(" ")
-              }));
-            });
-          }
-
-          const items = Array.isArray(section?.aircraft) ? section.aircraft : [section];
-          return items.map(item => ({
+        aircraft = data.flatMap(section => section.groups.flatMap(group =>
+          group.aircraft.map(item => ({
             ...item,
-            list: item.list ?? section.list,
-            group: item.group ?? section.group ?? null,
-            groupDescription: item.groupDescription ?? section.description ?? "",
-            name: item.name || [item.aircraft, item.manufacturer, item.additional].filter(Boolean).join(" "),
-            searchName: item.searchName || [item.manufacturer, item.additional, item.aircraft].filter(Boolean).join(" ")
-          }));
-        });
+            list: section.list,
+            group: group.number,
+            groupDescription: group.description,
+            searchName: [item.manufacturer, item.additional, item.aircraft, "aircraft"]
+              .filter(Boolean)
+              .join(" ")
+          }))
+        ));
         chooseRandom();
       } catch (error) {
         console.error(error);
@@ -316,8 +301,7 @@
         `&gsrlimit=${limit}&prop=imageinfo&iiprop=url|extmetadata|mime` +
         "&iiurlwidth=1200&format=json&origin=*";
 
-      const query = item.searchName || item.name || item.aircraft || "";
-      const url = api + "&gsrsearch=" + encodeURIComponent(query);
+      const url = api + "&gsrsearch=" + encodeURIComponent(item.searchName);
       const response = await fetch(url);
       if (!response.ok) throw new Error("Commons API request failed");
       const json = await response.json();
@@ -345,7 +329,7 @@
 
     async function getOpenverseImages(item, limit = 6) {
       const url = "https://api.openverse.org/v1/images/" +
-        `?page_size=${limit}&q=${encodeURIComponent(item.searchName || item.name || item.aircraft || "")}`;
+        `?page_size=${limit}&q=${encodeURIComponent(item.searchName)}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error("Openverse API request failed");
       const json = await response.json();
@@ -456,13 +440,12 @@
       if (!current || revealed) return;
       revealed = true;
 
-      const aircraftName = [current.manufacturer, current.additional, current.aircraft].filter(Boolean).join(" ");
-      document.getElementById("aircraft").textContent = aircraftName || current.name || "";
+      const aircraftName = [current.manufacturer, current.additional, current.aircraft].filter(Boolean).join(" • ");
+      document.getElementById("aircraft").textContent = aircraftName;
 
-      const groupLabel = current.groupDescription || (current.group !== null && current.group !== undefined ? `Group ${current.group}` : "");
       document.getElementById("details").textContent =
         `List ${current.list} • Aircraft ${current.number}` +
-        (groupLabel ? ` • Group ${current.group}: ${groupLabel}` : "");
+        ` • Group ${current.group}: ${current.groupDescription}`;
       document.getElementById("info").classList.remove("hidden");
       document.getElementById("reveal").disabled = true;
     }

@@ -921,7 +921,7 @@
       },
       {
         "number": 3,
-        "description": "Jet, Swept Wing, Wing Mounted Engines)",
+        "description": "Jet, Swept Wing, Wing Mounted Engines",
         "aircraft": [
           {
             "number": 5,
@@ -1011,7 +1011,7 @@
       },
       {
         "number": 4,
-        "description": "Jet, Rear Engines)",
+        "description": "Jet, Rear Engines",
         "aircraft": [
           {
             "number": 19,
@@ -1113,7 +1113,7 @@
       },
       {
         "number": 5,
-        "description": "Jet, Rear Engines, Straight Wing)",
+        "description": "Jet, Rear Engines, Straight Wing",
         "aircraft": [
           {
             "number": 35,
@@ -1143,7 +1143,7 @@
       },
       {
         "number": 6,
-        "description": "Jet, Delta Wing/Variable Geometry)",
+        "description": "Jet, Delta Wing/Variable Geometry",
         "aircraft": [
           {
             "number": 39,
@@ -1161,7 +1161,7 @@
       },
       {
         "number": 7,
-        "description": "Twin Propellers, Low/Mid Wing)",
+        "description": "Twin Propellers, Low/Mid Wing",
         "aircraft": [
           {
             "number": 41,
@@ -1263,7 +1263,7 @@
       },
       {
         "number": 8,
-        "description": "Twin/Triple Propellers, High Wing)",
+        "description": "Twin/Triple Propellers, High Wing",
         "aircraft": [
           {
             "number": 57,
@@ -1335,7 +1335,7 @@
       },
       {
         "number": 9,
-        "description": "Four Propellers)",
+        "description": "Four Propellers",
         "aircraft": [
           {
             "number": 68,
@@ -1359,7 +1359,7 @@
       },
       {
         "number": 10,
-        "description": "Single Propeller, Low Wing, Retractable Undercarriage)",
+        "description": "Single Propeller, Low Wing, Retractable Undercarriage",
         "aircraft": [
           {
             "number": 71,
@@ -1401,7 +1401,7 @@
       },
       {
         "number": 11,
-        "description": "Single Propeller, Low Wing, Fixed Undercarriage)",
+        "description": "Single Propeller, Low Wing, Fixed Undercarriage",
         "aircraft": [
           {
             "number": 77,
@@ -1437,7 +1437,7 @@
       },
       {
         "number": 12,
-        "description": "Single Propeller, High Wing, Fixed Undercarriage)",
+        "description": "Single Propeller, High Wing, Fixed Undercarriage",
         "aircraft": [
           {
             "number": 82,
@@ -1473,7 +1473,7 @@
       },
       {
         "number": 13,
-        "description": "Amphibians, Biplanes & Twin Booms)",
+        "description": "Amphibians, Biplanes & Twin Booms",
         "aircraft": [
           {
             "number": 87,
@@ -1497,7 +1497,7 @@
       },
       {
         "number": 12,
-        "description": "Helicopters)",
+        "description": "Helicopters",
         "aircraft": [
           {
             "number": 90,

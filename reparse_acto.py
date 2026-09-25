@@ -53,11 +53,11 @@ for raw_line in text.splitlines():
     if group_match:
         finish_group()
         description = group_match.group(2).strip()
-        if "(" in description and not description.endswith(")"):
-            description += ")"
+        if description.endswith(")") and description.count(")") > description.count("("):
+            description = description[:-1]
         group = {
             "number": int(group_match.group(1)),
-            "description": description.rstrip(")").strip() + (")" if ")" in description else ""),
+            "description": description,
             "aircraft": [],
         }
         continue
